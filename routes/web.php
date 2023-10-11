@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnimeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AnimeController::class, 'homepage'])->name('homepage');
+Route::get('/anime/{id}', [AnimeController::class, 'show'])->name('anime.show');
