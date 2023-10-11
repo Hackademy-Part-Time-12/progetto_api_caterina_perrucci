@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ use Illuminate\Support\Facades\Route;
 /* Route::get('/mio-nome', function(){
     return ['name' => 'Katia'];
 }); */
+
+Route::get('/anime', [ApiController::class, 'index'])->name('api.index');

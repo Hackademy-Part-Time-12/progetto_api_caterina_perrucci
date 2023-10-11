@@ -13,4 +13,12 @@
             @endforeach
         </div>
     </div>
+    <div class="container my-5">
+        <div class="row">
+            <h2 class="text-center">I nostri anime</h2>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row" id="wrapper"></div>
+    </div>
 </x-layout>
